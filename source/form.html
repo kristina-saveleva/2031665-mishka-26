@@ -4,88 +4,102 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
     <div class="container">
         <header class="main-header">
-            <a href="index.html" class="main-header__logo">
-                <img src="img/mishka-logo-mobile.svg" width="226" height="30" alt="mishka.">
-            </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">
+            <div class="main-header__container">
+                <a href="index.html" class="main-header__logo">
+                  <img src="img/mishka-logo-mobile.svg" alt="mishka.">
+                </a>
+                <nav class="main-nav">
+                  <button class="main-nav__toggle" type="button">
+                    <svg class="button-opened" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+                      <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+                      <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+                    </svg>
+                    <svg class="button-closed" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
+                    </svg>
                     <span class="visually-hidden">Открыть меню</span>
-                </button>
-                <div class="main-nav__wrapper">
+                  </button>
+                  <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a href="catalog.html">
-                                Каталог товаров
-                            </a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">
-                                Вязание на заказ
-                            </a>
-                        </li>
+                      <li class="main-nav__list-item">
+                        <a href="catalog.html">
+                          Каталог товаров
+                        </a>
+                      </li>
+                      <li class="main-nav__list-item">
+                        <a href="form.html">
+                          Вязание на заказ
+                        </a>
+                      </li>
                     </ul>
                     <ul class="main-nav__list user-list">
-                        <li class="site-list__item">
-                            <a href="#">
-                                <svg class="user-list__login-icon" width="18" height="18"></svg>
-                                Поиск по сайту
-                            </a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">
-                                <svg class="user-list__login-icon" width="18" height="18"></svg>
-                                Корзина: пока пуста
-                            </a>
-                        </li>
+                      <li class="main-nav__list-item user-list__item">
+                        <a href="#">
+                          <svg class="main-nav__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+                          </svg>
+                          Поиск по сайту
+                        </a>
+                      </li>
+                      <li class="main-nav__list-item user-list__item">
+                        <a href="#">
+                          <svg class="main-nav__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                          </svg>
+                          Корзина: пока пуста
+                        </a>
+                      </li>
                     </ul>
-                </div>
-            </nav>
-            <h1 class="main-header__title">Вязание на заказ</h1>
-            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
+                  </div>
+                </nav>
+              </div>
+            <h1 class="main-header__title main-header__title-catalog">Вязание на заказ</h1>
+            <p class="main-header__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
                 чтобы уточнить детали.</p>
         </header>
         <main>
-            <form class="catalog-products__form" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="fieldset catalog-products__form-radio">
-                    <legend class="catalog-products__title">ТИП
+            <form class="form-products__form" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="fieldset form-products__form-radio">
+                    <legend class="form-products__title">ТИП
                     </legend>
-                    <ul class="catalog-products__form-radio-list">
-                        <li class="catalog-products__form-radio-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group"
+                    <ul class="form-products__form-radio-list">
+                        <li class="form-products__form-radio-item">
+                            <label class="form-products__form-radio-control">
+                                <input class="visually-hidden form-products__form-radio-control-input" type="radio" name="product-group"
                                     value="accessories" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Аксессуар для интерьера</span>
+                                <span class="form-products__form-radio-control-mark"></span>
+                                <span class="form-products__form-radio-control-label">Аксессуар для интерьера</span>
                             </label>
                         </li>
-                        <li class="catalog-products__form-radio-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group"
+                        <li class="form-products__form-radio-item">
+                            <label class="form-products__form-radio-control">
+                                <input class="visually-hidden form-products__form-radio-control-input" type="radio" name="product-group"
                                     value="children-toy">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Детская игрушка</span>
+                                <span class="form-products__form-radio-control-mark"></span>
+                                <span class="form-products__form-radio-control-label">Детская игрушка</span>
                             </label>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="fieldset catalog-products__form-checkbox">
-                    <legend class="catalog-products__title">ЦВЕТ:
+                <fieldset class="fieldset form-products__form-checkbox">
+                    <legend class="form-products__title">ЦВЕТ:
                     </legend>
-                    <ul class="catalog-products__form-checkbox-list">
-                        <li class="catalog-products__form-checkbox-item">
-                            <label class="catalog-products__container">
+                    <ul class="form-products__form-checkbox-list">
+                        <li class="form-products__form-checkbox-item">
+                            <label class="form-products__container">
                                 <input type="checkbox" name="chocolate" checked>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg1" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                 </svg>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg2" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                     <path
@@ -95,14 +109,14 @@
                                 <span class="control-label">Белый</span>
                             </label>
                         </li>
-                        <li class="catalog-products__form-checkbox-item">
-                            <label class="catalog-products__container">
+                        <li class="form-products__form-checkbox-item">
+                            <label class="form-products__container">
                                 <input type="checkbox" name="sugar" checked>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg1" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                 </svg>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg2" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                     <path
@@ -112,14 +126,14 @@
                                 <span class="control-label">Серый</span>
                             </label>
                         </li>
-                        <li class="catalog-products__form-checkbox-item">
-                            <label class="catalog-products__container">
+                        <li class="form-products__form-checkbox-item">
+                            <label class="form-products__container">
                                 <input type="checkbox" name="fruit">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg1" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                 </svg>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg2" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                     <path
@@ -129,14 +143,14 @@
                                 <span class="control-label">Тиффани</span>
                             </label>
                         </li>
-                        <li class="catalog-products__form-checkbox-item">
-                            <label class="catalog-products__container">
+                        <li class="form-products__form-checkbox-item">
+                            <label class="form-products__container">
                                 <input type="checkbox" name="syrop">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg1" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                 </svg>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg2" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                     <path
@@ -146,14 +160,14 @@
                                 <span class="control-label">Черный</span>
                             </label>
                         </li>
-                        <li class="catalog-products__form-checkbox-item">
-                            <label class="catalog-products__container">
+                        <li class="form-products__form-checkbox-item">
+                            <label class="form-products__container">
                                 <input type="checkbox" name="jam">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg1" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                 </svg>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg2" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                     <path
@@ -163,14 +177,14 @@
                                 <span class="control-label">Розовый</span>
                             </label>
                         </li>
-                        <li class="catalog-products__form-checkbox-item">
-                            <label class="catalog-products__container">
+                        <li class="form-products__form-checkbox-item">
+                            <label class="form-products__container">
                                 <input type="checkbox" name="jam">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg1" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                 </svg>
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                <svg class="svg2" width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="36" height="36" stroke="#444444" stroke-width="2" />
                                     <path
@@ -182,46 +196,46 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="fieldset catalog-products__form-initial">
-                    <legend class="catalog-products__title">ФИО
+                <fieldset class="fieldset form-products__form-initial">
+                    <legend class="form-products__title">ФИО
                     </legend>
-                    <p>
-                        <label for="fname">Имя:</label>
-                        <input class="input" type="text" id="fname" placeholder="Введите ваше имя*">
-                        <label for="lname">Фамилия:</label>
-                        <input class="input" type="text" id="lname" placeholder="Укажите фамилию*">
-                        <label for="patronymic">Отчество:</label>
-                        <input class="input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                    <p class="form-products__form-initial-list">
+                        <label class="form-products__form-initial-title" for="fname">Имя:</label>
+                        <input class="form-products__form-initial-information" class="input" type="text" id="fname" placeholder="Введите ваше имя*">
+                        <label class="form-products__form-initial-title" for="lname">Фамилия:</label>
+                        <input class="form-products__form-initial-information" class="input" type="text" id="lname" placeholder="Укажите фамилию*">
+                        <label class="form-products__form-initial-title" for="patronymic">Отчество:</label>
+                        <input class="form-products__form-initial-information" class="input" type="text" id="patronymic" placeholder="Отчество, если желаете">
                     </p>
                 </fieldset>
-                <fieldset class="fieldset catalog-products__form-phone">
-                    <legend class="catalog-products__title">ТЕЛ
+                <fieldset class="fieldset form-products__form-phone">
+                    <legend class="form-products__title">ТЕЛ
                     </legend>
-                    <p>
-                        <label class="delivery__form-order-phone" for="tel"></label>
-                        <input class="input delivery__form-input" type="tel" id="tel" name="tel"
+                    <p class="form-products__form-phone-list">
+                        <label for="tel"></label>
+                        <input class="form-products__form-phone-information" class="input delivery__form-input" type="tel" id="tel" name="tel"
                             placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                             pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
                     </p>
                 </fieldset>
-                <fieldset class="fieldset catalog-products__form-email">
-                    <legend class="catalog-products__title">E-MAIL
+                <fieldset class="fieldset form-products__form-email">
+                    <legend class="form-products__title">E-MAIL
                     </legend>
-                    <p>
-                        <label for="email">E-MAIL</label>
-                        <input class="input mail__input" type="email" id="email" name="email"
-                            placeholder="email@example.com">
+                    <p class="form-products__form-email-list">
+                        <label for="email"></label>
+                        <input class="form-products__form-email-information"  type="email" id="email" name="email"
+                            placeholder="Ваш Email*">
                     </p>
                 </fieldset>
-                <fieldset class="fieldesr catalog-products__form-textarea">
-                    <legend class="catalog-products__title">ДОП
+                <fieldset class="fieldset form-products__form-textarea">
+                    <legend class="form-products__title">ДОП
                     </legend>
-                    <p>
-                        <textarea name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    <p class="form-products__form-textarea-list">
+                        <textarea class="form-products__form-textarea-box" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                     </p>
-                    <p>*Поля обязательны для заполнения</p>
+                    <p class="form-products__form-textarea-note">*Поля обязательны для заполнения</p>
                 </fieldset>
-                <button class="catalog-products__button">ОТПРАВИТЬ ЗАКАЗ</button>
+                <button class="button form-products__button">ОТПРАВИТЬ ЗАКАЗ</button>
             </form>
         </main>
         <footer class="footer">

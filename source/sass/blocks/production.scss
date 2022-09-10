@@ -1,0 +1,39 @@
+.production{
+    margin: 32px 30px 57px 30px;
+    position: relative;
+    border: 1px solid #ECECEC;
+    padding-bottom: 32px;
+    &__container{
+        display: flex;
+        font-size: 11px;
+        justify-content: space-between;
+        padding-left: 35px;
+        margin-top: 10px;
+        &-title{
+            margin-left: 26px;
+            padding: 0;
+            line-height: 23px;
+        }
+    }
+    &__button{
+        margin-left: 35px;
+        margin-top: 17px;
+        padding: 14px 18px;
+        text-transform: uppercase;
+    }
+    &__video{
+        margin-top: 13px;
+        &-play{
+            position: absolute;
+            top: 132px;
+            left: 79px;
+        }
+    }
+    &__description{
+        margin: 0;
+        padding: 26px 31px 23px 34px;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+}

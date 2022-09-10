@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 37px;
+    padding-top: 10px;
+    padding-bottom: 31.85px;
+    background: #F1F1F1;
+    &__social{
+        margin-bottom: 38px;
+        &-icons{
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            margin-left: 92px;
+            &-wrapper{
+                margin-right: 32px;
+            }
+        }
+    }
+    &__develop{
+        display: flex;
+        justify-content: center;
+        &-title{
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 18px;
+            margin-right: 27px;
+        }
+    }
+}

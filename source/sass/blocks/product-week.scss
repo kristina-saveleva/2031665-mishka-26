@@ -1,0 +1,44 @@
+.product-week{
+    $color: #63D1BB;
+    padding: 31px 29px;
+    &__title{
+        margin: 0;
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 29px;
+    }
+    &__characteristics{
+        &-item{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 21px;
+        }
+        &-title{
+            width: 60px;
+        }
+    }
+    
+    &__caption{
+        color: $color;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 15px;
+        margin: 5px 0 16px 3px;
+    }
+    &__item-with-dots{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    &__price{
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 19px;
+        font-size: 15px;
+        margin-bottom: 23px;
+    }
+}

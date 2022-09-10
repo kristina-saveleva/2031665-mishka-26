@@ -1,0 +1,38 @@
+.about{
+    padding: 20px 39px 21px 32px;
+    &__title{
+        margin-bottom: 27px;
+    }
+    &__wrapper{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 36px;
+    }
+    &__image{
+        margin-left: 10px;
+        &-flower{
+            margin-left: 10px;
+        }
+        &-money{
+            margin: -7px 0 9px 1px;
+        }
+        &-heart{
+            margin-top: -3px;
+            margin-left: 8px;
+        }
+        &-yarn{
+            margin-left: 4px;
+            margin-top: -2px;
+        }
+        &-support{
+            margin: -4px 0 8px -4px;
+        }
+        &-gift{
+            margin: -4px 0 2px 4px;
+        }
+    }
+    &__description{
+        margin: 14px 0 29px -1px;
+        font-size: 15px;
+    }
+}

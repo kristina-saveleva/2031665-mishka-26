@@ -10,55 +10,71 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <a href="#" class="main-header__logo">
-        <img src="img/mishka-logo-mobile.svg" width="226" height="30" alt="mishka.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Вязание на заказ
-              </a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="site-list__item">
-              <a href="#">
-                <svg class="user-list__login-icon" width="18" height="18"></svg>
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                <svg class="user-list__login-icon" width="18" height="18"></svg>
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
-      <div class="main-header__inner">
-        <div class="main-header__content">
-          <div class="main-header__content-title content-interior">
-            Предметы интерьера
+      <div class="main-header__container">
+        <a href="#" class="main-header__logo">
+          <img src="img/mishka-logo-mobile.svg" alt="mishka.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <svg class="button-opened" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+              <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+              <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+            </svg>
+            <svg class="button-closed" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__list-item">
+                <a href="catalog.html">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="form.html">
+                  Вязание на заказ
+                </a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="main-nav__list-item user-list__item">
+                <a href="#">
+                  <svg class="main-nav__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+                  </svg>
+                  Поиск по сайту
+                </a>
+              </li>
+              <li class="main-nav__list-item user-list__item">
+                <a href="#">
+                  <svg class="main-nav__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                  </svg>
+                  Корзина: пока пуста
+                </a>
+              </li>
+            </ul>
           </div>
-          <img class="main-header__content-image" src="img/interior.svg" alt="Лампа.">
-        </div>
-        <div class="main-header__content">
-          <div class="main-header__content-title content-toys">
-            Детские игрушки
+        </nav>
+      </div>
+      <div class="main-header__wrapper">
+        <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+        <div class="main-header__inner">
+          <div class="main-header__content content-interior">
+            <div class="main-header__content-title">
+              Предметы интерьера
+            </div>
+            <img class="main-header__content-image interior-image" src="img/interior.svg" alt="Лампа.">
           </div>
-          <img class="main-header__content-image" src="img/toy-svg.svg" alt="Игрушка кубик.">
+          <div class="main-header__content content-toys">
+            <div class="main-header__content-title">
+              Детские игрушки
+            </div>
+            <img class="main-header__content-image" src="img/toy-svg.svg" alt="Игрушка кубик.">
+          </div>
         </div>
       </div>
     </header>
@@ -70,7 +86,7 @@
             Вязаные корзинки
           </h2>
           <p class="product-week__caption">
-            ТОВАР НЕДЕЛИ.
+            ТОВАР НЕДЕЛИ
           </p>
         </header>
         <div class="product-week__wrapper">
@@ -80,30 +96,30 @@
             </p>
             <dl class="product-week__characteristics-item">
               <div class="product-week__item-with-dots">
-                <dt class="product-week__title">Цвет:</dt>
+                <dt class="product-week__characteristics-title">Цвет:</dt>
                 <dd class="product-week__value">
                   Тиффани/серый
                 </dd>
               </div>
               <div class="product-week__item-with-dots">
-                <dt class="product-week__title">Диаметр:</dt>
+                <dt class="product-week__characteristics-title">Диаметр:</dt>
                 <dd class="product-week__value">
                   25 см
                 </dd>
               </div>
               <div class="product-week__item-with-dots">
-                <dt class="product-week__title">Высота:</dt>
+                <dt class="product-week__characteristics-title">Высота:</dt>
                 <dd class="product-week__value">
                   15 см
                 </dd>
               </div>
             </dl>
+            <img class="product-week__image" src="img/product-week.jpg" alt="Фото корзинок">
             <div class="product-week__price">
               Цена: 990 руб.
             </div>
-            <button class="product-week__button">ЗАКАЗАТЬ</button>
+            <button class="product-week__button button">ЗАКАЗАТЬ</button>
           </div>
-          <img class="product-week__image" src="img/triple-set-tablet.png" alt="Фото корзинок">
         </div>
       </section>
       <section class="about">
@@ -112,37 +128,37 @@
         </h2>
         <div class="about__container">
           <div class="about__wrapper">
-            <img src="img/flower.svg" alt="Цветок." class="about__image">
+            <img src="img/flower.svg" alt="Цветок." class="about__image about__image-flower">
             <h2 class="about__description">
               Экологически чистые материалы
             </h2>
           </div>
           <div class="about__wrapper">
-            <img src="img/clew.svg" alt="Клубок." class="about__image">
-            <h2 class="about__description">
-              Связано вручную с любовью и умилением
-            </h2>
-          </div>
-          <div class="about__wrapper">
-            <img src="img/money.svg" alt="Деньги." class="about__image">
+            <img src="img/money.svg" alt="Деньги." class="about__image about__image-money">
             <h2 class="about__description">
               Скандинавский стиль по российской цене
             </h2>
           </div>
           <div class="about__wrapper">
-            <img src="img/manufacturer.svg" alt="Ракета." class="about__image">
-            <h2 class="about__description">
-              Поддержка отечественного производителя
-            </h2>
-          </div>
-          <div class="about__wrapper">
-            <img src="img/likes.svg" alt="Сердце." class="about__image">
+            <img src="img/likes.svg" alt="Сердце." class="about__image about__image-heart">
             <h2 class="about__description">
               Увеличивает лайки на фотографиях
             </h2>
           </div>
           <div class="about__wrapper">
-            <img src="img/present.svg" alt="Подарок." class="about__image">
+            <img src="img/clew.svg" alt="Клубок." class="about__image about__image-yarn">
+            <h2 class="about__description">
+              Связано вручную с любовью и умилением
+            </h2>
+          </div>
+          <div class="about__wrapper">
+            <img src="img/manufacturer.svg" alt="Ракета." class="about__image about__image-support">
+            <h2 class="about__description">
+              Поддержка отечественного производителя
+            </h2>
+          </div>
+          <div class="about__wrapper">
+            <img src="img/present.svg" alt="Подарок." class="about__image about__image-gift">
             <h2 class="about__description">
               Поставляется в подарочной упаковке
             </h2>
@@ -152,7 +168,6 @@
       <section class="slider">
         <div class="slider__header">
           <h2 class="slider__title-review">Отзывы</h2>
-          <button class="slider__button">Написать</button>
         </div>
         <div class="slider___subtitle-review">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
@@ -169,17 +184,18 @@
             </p>
           </div>
           <div class="slider__arrows">
-            <button class="arrows__left-arrow">
+            <button class="arrows__left-arrow arrows">
               <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
               </svg>
             </button>
-            <button class="arrows__right-arrow arrows__right-arrow-active">
+            <button class="arrows__right-arrow arrows__right-arrow-active arrows">
               <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
               </svg>
             </button>
           </div>
+          <button class="slider__button button">НАПИСАТЬ</button>
         </div>
       </section>
       <section class="contacts">
@@ -191,20 +207,22 @@
         <dl class="contacts__items">
           <div class="contacts__item-with-dots">
             <dt class="contacts__title">e-mail:</dt>
-            <dd class="contacts__value">info@mimimishkashop.ru</dd>
+            <dd class="contacts__value contacts__value-email"><span>info@mimimishkashop.ru</span></dd>
           </div>
           <div class="contacts__item-with-dots">
             <dt class="contacts__title">адрес:</dt>
-            <dd class="contacts__value">г. Санкт-Петербург</dd>
-            <dd class="contacts__value">ул. Большая Конюшенная</dd>
-            <dd class="contacts__value">д. 19/8, офис 101</dd>
+            <div class="contacts__box">
+              <dd class="contacts__value">г. Санкт-Петербург</dd>
+              <dd class="contacts__value">ул. Большая Конюшенная</dd>
+              <dd class="contacts__value">д. 19/8, офис 101</dd>
+            </div>
           </div>
         </dl>
         <div class="contacts__map-container">
           <img class="contacts__map" src="img/map.png" alt="Карта.">
           <img class="contacts__dot" src="img/cloud.svg" alt="Точка на карте.">
         </div>
-        <button class="contacts__button">Напишите нам</button>
+        <button class="contacts__button button">НАПИШИТЕ НАМ</button>
       </section>
     </main>
     <footer class="footer">
@@ -246,4 +264,5 @@
     </footer>
   </div>
 </body>
+
 </html>
