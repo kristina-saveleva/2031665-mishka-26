@@ -1,0 +1,28 @@
+.slider{
+    padding: 0 30px 69px;
+    &__button{
+        padding: 14px 78px;
+    }
+    &__title-review{
+        font-size: 25px;
+        margin: 0 0 14px 0;
+    }
+    &___subtitle-review{
+        font-size: 14px;
+    }
+    &__autor{
+        font-weight: 700;
+        line-height: 24px;
+        &-name{
+            margin: 33px 0 7px 3px;
+            font-size: 15px;
+        }
+        &-instagram{
+            font-size: 14px;
+            margin: 0 0 32px 2px;
+        }
+    }
+    &__arrows{
+        margin-bottom: 39px;
+    }
+}

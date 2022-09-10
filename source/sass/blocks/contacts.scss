@@ -1,0 +1,43 @@
+.contacts{
+    &__header{
+        padding: 0 30px;
+    }
+    &__items{
+        padding: 0 30px;
+        margin: 28px 0 62px 0;
+    }
+    &__map{
+        position: absolute;
+        width: 320px;
+        object-fit: cover;
+        height: 454.16px;
+        &-container{
+            position: relative;
+            padding: 0 0 41px;
+            width: 320px;
+            height: 454.16px;
+        }
+    }
+    &__item-with-dots{
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    &__value{
+        margin-left: 35px;
+    }
+    & span{
+        border-bottom: 1px solid #62D1BA;;
+        padding-bottom: 1px;
+    }
+    &__dot{
+        z-index: 1;
+        top: 145px;
+        left: 140px;
+        position: absolute;
+    }
+    &__button{
+        padding: 14px 52px;
+        margin-left: 31px;
+    }
+}
