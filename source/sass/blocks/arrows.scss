@@ -6,3 +6,11 @@
     border: 1px solid #ECECEC;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+    .arrows{
+        border: none;
+        margin-right: 18px;
+        padding: 16px 9px;
+    }
+}

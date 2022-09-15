@@ -25,4 +25,42 @@
             margin-right: 27px;
         }
     }
+    &__logo{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 43px 50px 0px;
+        &__logo{
+            display: block;
+            width: 101.74px;
+            height: 34px;
+            margin-top: 8px;
+        }
+        &__develop{
+            & img{
+                height: 34px;
+                width: 26.78px;
+                margin-top: 9px;
+            }
+        }
+        &__social{
+            &-icons{
+                margin-left: 28px;
+            }
+        }
+        &-form{
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .footer{
+        margin-top: 25px;
+    }
 }

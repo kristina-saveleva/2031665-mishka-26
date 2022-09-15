@@ -36,3 +36,67 @@
         font-size: 15px;
     }
 }
+
+@media (min-width: 768px) {
+    .about{
+        padding: 18px 60px 27px 50px;
+        &__title{
+            font-size: 43px;
+            margin-bottom: 52px;
+        }
+        &__container{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px 73px;
+            grid-template-columns: 262px 302px;
+        }
+        &__description{
+            font-size: 20px;
+        }
+        &__wrapper{
+            margin-bottom: 14px;
+            &-eco{
+                order: 1;
+            }
+            &-money{
+                order: 3;
+            }
+            &-like{
+                order:5;
+            }
+            &-clew{
+                order: 2;
+            }
+            &-manufacture{
+                order: 4;
+            }
+            &-present{
+                order: 6;
+            }
+        }
+        &__image{
+            &-yarn{
+                margin-top: 4px;
+            }
+            &-support{
+                margin: -4px 0 13px -4px;
+            }
+            &-gift{
+                margin: -4px 0 0px 4px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .about{
+        padding: 0px 151px 0 225px;
+        &__title{
+            font-size: 53px;
+        }
+        &__container{
+            gap: 5px 97px;
+            grid-template-columns: 249px 317px;
+        }
+    }
+}
