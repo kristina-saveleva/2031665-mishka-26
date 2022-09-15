@@ -1,6 +1,9 @@
 .contacts{
     &__header{
         padding: 0 30px;
+        &-image{
+            display: none;
+        }
     }
     &__items{
         padding: 0 30px;
@@ -39,5 +42,104 @@
     &__button{
         padding: 14px 52px;
         margin-left: 31px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts{
+        padding: 20px 0;
+        &__header{
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            &-title{
+                font-size: 43px;
+                line-height: 50px;
+            }
+            &-image{
+                display: block;
+            }
+        }
+        &__items{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 14px;
+            margin-bottom: 18px;
+            padding: 0 50px;
+        }
+        &__item-with-dots{
+            font-size: 17px;
+        }
+        &__value{
+            margin-left: 25px;
+        }
+        &__map{
+            width: 768px;
+            height: 457px;
+            &-container{
+                width: 768px;
+                height: 457px;
+            }
+        }
+        &__dot{
+            top: 138px;
+            left: 363px;
+        }
+        &__button{
+            display: flex;
+            margin-top: 14px;
+            padding: 14px 37px;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .contacts{
+        margin-top: 152px;
+        padding-bottom: 37px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        &__header{
+            grid-row: 1;
+            grid-column: 1;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            &-image{
+                width: 49px;
+                margin-left: 36px;
+                margin-bottom: -15px;
+            }
+            &-title{
+                order: 1;
+                margin: 0;
+                font-size: 53px;
+                margin-left: 64px;
+                margin-bottom: -2px;
+            }
+        }
+        &__items{
+            grid-column: 1;
+            display: flex;
+            grid-row: 2/4;
+            flex-direction: column;
+            width: 300px;
+            margin-top: 40px;
+            margin-left: 174px;
+        }
+        &__map{
+            width: 527px;
+            &-container{
+                grid-column: 2;
+                grid-row: 1/5;
+            }
+        }
+        &__button{
+            grid-row: 4;
+            margin-bottom: 42px;
+            margin-right: 121px;
+        }
     }
 }
