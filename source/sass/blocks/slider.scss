@@ -1,5 +1,8 @@
 .slider{
     padding: 0 30px 69px;
+    &-picture{
+        display: none;
+    }
     &__button{
         padding: 14px 78px;
     }
@@ -30,13 +33,17 @@
 
 @media (min-width: 768px) {
     .slider{
-        background-image: url(../../img/reviews-image.jpg);
-        background-repeat: no-repeat;
-        padding: 84px 40px 101px 49px;
+        padding: 38px 40px 101px 49px;
         display: grid;
         grid-template-rows: 52px 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         position: relative;
+        &-picture{
+            display: block;
+            position: absolute;
+            z-index: -3;
+            top: -47px;
+        }
         &::after{
             content: "";
             background-image: url(../../img/wave-gray.svg);
@@ -49,6 +56,8 @@
         }
         &__header{
             order: 1;
+            grid-column: 1;
+            grid-row: 1;
         }
         &__title{
             &-review{
@@ -106,6 +115,9 @@
         &__button{
             padding: 0px 2px;
             margin: -3px 9px 3px 36px;
+        }
+        &-picture{
+            top: 3px;
         }
         &::after{
             background-image: url(../img/wave-gray-main.svg);

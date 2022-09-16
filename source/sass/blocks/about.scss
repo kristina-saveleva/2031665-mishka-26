@@ -49,9 +49,11 @@
             grid-template-rows: 1fr 1fr 1fr;
             gap: 20px 73px;
             grid-template-columns: 262px 302px;
+            margin-bottom: 49px;
         }
         &__description{
             font-size: 20px;
+            margin: 14px 0 13px -1px;
         }
         &__wrapper{
             margin-bottom: 14px;
@@ -97,6 +99,12 @@
         &__container{
             gap: 5px 97px;
             grid-template-columns: 249px 317px;
+            margin-bottom: 23px;
+        }
+        &__wrapper{
+            &-clew{
+                margin-bottom: 41px;
+            }
         }
     }
 }

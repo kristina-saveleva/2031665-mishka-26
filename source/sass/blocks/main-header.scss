@@ -32,10 +32,13 @@
         padding: 17px 30px 20px 31px;
     }
     &__wrapper{
-        background-image: url(../img/main-header-image.jpg);
-        background-repeat: no-repeat;
         background-position-x: center;
         background-size: 600px;
+        position: relative;
+        &-image{
+            position: absolute;
+            z-index: -3;
+        }
     }
     &__inner{
         margin-top: 90px;
@@ -67,6 +70,7 @@
         justify-content: end;
         margin: 15px 15px -6px 0px;
         padding-bottom: 4px;
+        background: #FFFFFF;
     }
 }
 
@@ -117,10 +121,11 @@
             }
         }
         &__wrapper{
-            background-size: cover;
             padding: 0px 50px;
             position: relative;
-            background-position-x: center;
+            &-image{
+                left: 0px;
+            }
             &::after{
                 position: absolute;
                 content: "";
