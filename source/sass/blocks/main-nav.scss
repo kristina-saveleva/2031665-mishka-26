@@ -1,7 +1,23 @@
 .main-nav{
     padding-right: 18px;
-    &:focus-within .main-nav__wrapper{
-        display: block;
+    &--opened {
+        & .main-nav__wrapper{
+            display: none;
+        }
+        & .button-opened{
+            display: block;
+        }
+    }
+    &--closed{
+        & .main-nav__wrapper{
+            display: block;
+        }
+        & .button-closed{
+            display: block;
+        }
+        & .button-opened{
+            display: none;
+        }
     }
     &__sale{
         &-block{
@@ -14,25 +30,6 @@
         padding: 0;
         cursor: pointer;
         margin: 6px -3px 0 0;
-        &:hover~.main-nav__wrapper{
-            display: block;
-        }
-        &:focus~.main-nav__wrapper{
-            display: block;
-        }
-        &:hover .button-closed{
-            display: block;
-        }
-        &:hover .button-opened{
-            display: none;
-        }
-        &:focus .button-closed{
-            display: block;
-        }
-        &:focus .button-opened{
-            display: none;
-        }
-        
     }
     &__list{
         padding: 0;
@@ -56,6 +53,9 @@
             a:focus{
                 display: block;
             }
+            &-delivery{
+                display: none;
+            }
         }
     }
     &__icon{
@@ -76,8 +76,10 @@
 
 @media (min-width: 768px) {
     .main-nav{
-        &:focus-within .main-nav__wrapper{
-            display: grid;
+        &--opened {
+            & .main-nav__wrapper{
+                display: grid;
+            }
         }
         &__toggle{
             display: none;
