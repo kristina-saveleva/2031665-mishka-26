@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -188,6 +192,11 @@
         </nav>
       </div>
       <div class="main-header__wrapper">
+        <picture>
+          <source class="main-header__wrapper-image" media="(min-width: 1150px)" srcset="img/main-header-image-desktop.jpg 1x, img/main-header-image-desktop@2x.jpg 2x">
+          <source class="main-header__wrapper-image" media="(min-width: 768px)" srcset="img/main-header-image-tablet.jpg 1x, img/main-header-image-tablet@2x.jpg 2x">
+          <img class="main-header__wrapper-image"  src="img/main-header-image-mobile.jpg" srcset="img/main-header-image-mobile@2x.jpg 2x" alt="Main-image.">
+        </picture>
         <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
         <div class="main-header__inner">
           <div class="main-header__content content-interior">
@@ -243,7 +252,11 @@
                 </div>
               </dl>
             </div>
-            <img class="product-week__image" src="img/product-week.jpg" alt="Фото корзинок">
+            <picture class="product-week__image" >
+              <source media="(min-width: 1150px)" srcset="img/product-week-desktop.jpg 1x, img/product-week-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/product-week-tablet.jpg 1x, img/product-week-tablet@2x.jpg 2x">
+              <img src="img/product-week-mobile.jpg" srcset="img/product-week-mobile@2x.jpg 2x" alt="Product-week.">
+            </picture>
             <div class="product-week__box">
               <div class="product-week__price">
                 Цена: 990 руб.
@@ -297,6 +310,11 @@
         </div>
       </section>
       <section class="slider">
+        <picture class="slider-picture">
+          <source media="(min-width: 1150px)" srcset="img/reviews-image-desktop.jpg 1x, img/reviews-image-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/reviews-image-tablet.jpg 1x, img/reviews-image-tablet@2x.jpg 2x">
+          <img src="img/reviews-image-tablet.jpg" alt="Reviews.">
+        </picture>
         <div class="slider__header">
           <h2 class="slider__title-review">Отзывы</h2>
         </div>

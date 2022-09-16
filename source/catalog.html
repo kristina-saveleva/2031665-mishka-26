@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -194,7 +198,11 @@
         <h2 class="visually-hidden">Товары для дома</h2>
         <ul class="catalog-products__item-list">
           <li class="catalog-products__item">
-            <img class="catalog-products__image" src="img/rabbit.png" alt="rabbit.">
+            <picture class="catalog-products__image">
+              <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/rabbit-tablet.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
+              <img src="img/rabbit.jpg" srcset="img/rabbit@2x.jpg 2x" alt="Rabbit.">
+            </picture>
             <div class="catalog-products__wrapper">
               <h2 class="catalog-products__title">Зайчик-попрыгайчик</h2>
               <p class="catalog-products__subtitle">Рост 30 см, вес 200 г</p>
@@ -211,7 +219,11 @@
             </div>
           </li>
           <li class="catalog-products__item">
-            <img class="catalog-products__image" src="img/basket.png" alt="rabbit.">
+            <picture class="catalog-products__image">
+              <source media="(min-width: 1150px)" srcset="img/basket-desktop.jpg 1x, img/basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/basket-tablet.jpg 1x, img/basket-tablet@2x.jpg 2x">
+              <img src="img/basket.jpg" srcset="img/basket@2x.jpg 2x" alt="Basket.">
+            </picture>
             <div class="catalog-products__wrapper">
               <h2 class="catalog-products__title">Корзинка для белья</h2>
               <p class="catalog-products__subtitle">Диаметр 15 см, высота 10 см</p>
@@ -228,7 +240,11 @@
             </div>
           </li>
           <li class="catalog-products__item">
-            <img class="catalog-products__image" src="img/toy-basket.png" alt="rabbit.">
+            <picture class="catalog-products__image">
+              <source media="(min-width: 1150px)" srcset="img/toy-basket-desktop.jpg 1x, img/toy-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/toy-basket-tablet.jpg 1x, img/toy-basket-tablet@2x.jpg 2x">
+              <img src="img/toy-basket.jpg" srcset="img/toy-basket-mobile@2x.jpg 2x" alt="Toy-basket.">
+            </picture>
             <div class="catalog-products__wrapper catalog-products__wrapper-last">
               <h2 class="catalog-products__title">Большая корзинка для игрушек</h2>
               <p class="catalog-products__subtitle">Диаметр 30 см, высота 30 см</p>
