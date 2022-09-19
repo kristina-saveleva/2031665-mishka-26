@@ -29,10 +29,19 @@
     }
     &__value{
         margin-left: 35px;
+        &-email{
+            cursor: pointer;
+            &:hover{
+                color: #46C1AE;
+            }
+        }
     }
     & span{
-        border-bottom: 1px solid #62D1BA;;
+        border-bottom: 1px solid #62D1BA;
         padding-bottom: 1px;
+        &:active{
+            border-bottom: 1px solid rgba(98, 209, 186, .1);
+        }
     }
     &__dot{
         z-index: 1;

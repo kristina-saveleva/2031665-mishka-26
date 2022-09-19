@@ -23,6 +23,12 @@
         &-block{
             display: none;
         }
+        &:hover{
+            opacity: 0.6;
+        }
+        &:active{
+            opacity: 0.3;
+        }
     }
     &__toggle{
         background-color: transparent;
@@ -53,14 +59,30 @@
             a:focus{
                 display: block;
             }
+            &:hover svg{
+                fill: #63D1BB;
+                opacity: 1;
+            }
+            &:active svg{
+                opacity: .3;
+            }
             &-delivery{
                 display: none;
+            }
+            &:hover{
+                opacity: 0.6;
+            }
+            &:active{
+                opacity: 0.3;
             }
         }
     }
     &__icon{
         margin-left: -44px;
         margin-right: 22px;
+        opacity: 0.2;
+        width: 18px;
+        height: 18px;
     }
     &__wrapper{
         display: none;

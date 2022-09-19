@@ -17,4 +17,11 @@
         width: 21px;
         height: 20px;
     }
+    &:hover{
+        background-color: #444444;
+        color: #FFFFFF;
+    }
+    &:active{
+        color: rgba(255, 255, 255, .3);
+    }
 }

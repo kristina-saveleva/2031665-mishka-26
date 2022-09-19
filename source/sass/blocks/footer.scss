@@ -13,6 +13,16 @@
             &-wrapper{
                 margin-right: 32px;
             }
+            & svg{
+                width: 27px;
+                height: 18px;
+            }
+            & svg:hover{
+                fill: #46C1AE;
+            }
+            & svg:active{
+                opacity: .3;
+            }
         }
     }
     &__develop{
@@ -24,9 +34,23 @@
             line-height: 18px;
             margin-right: 27px;
         }
+        &-image{
+            margin-top: 9px;
+            width: 26.9px;
+            height: 34.1px;
+            fill: #63D1BB;
+        }
+        &:hover .footer__develop-image{
+            fill: #46C1AE;
+        }
+        &:active .footer__develop-image{
+            opacity: 0.3;
+        }
     }
     &__logo{
         display: none;
+        width: 102px; 
+        height: 34px;
     }
 }
 
@@ -35,17 +59,17 @@
         display: flex;
         justify-content: space-between;
         padding: 43px 50px 0px;
+        cursor: pointer;
         &__logo{
             display: block;
             width: 101.74px;
             height: 34px;
             margin-top: 8px;
-        }
-        &__develop{
-            & img{
-                height: 34px;
-                width: 26.78px;
-                margin-top: 9px;
+            &:hover{
+                fill: #46C1AE;
+            }
+            &:active{
+                opacity: .3;
             }
         }
         &__social{

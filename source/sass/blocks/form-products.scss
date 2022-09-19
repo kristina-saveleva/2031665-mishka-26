@@ -53,6 +53,12 @@
             }
             &-item{
                 list-style-type: none;
+                &:hover .form-products__form-radio-control-mark{
+                    border: 2px solid #62D1BA;
+                }
+                &:active .form-products__form-radio-control-mark{
+                    border: 2px solid rgba(0, 0, 0, 0.3);
+                }
             }
             &-list{
                 padding: 0;
@@ -62,6 +68,26 @@
             &-item{
                 list-style-type: none;
                 margin-bottom: 23px;
+                fill: #fff;
+                stroke: #000;
+                & .path{
+                    fill: #000;
+                }
+                &:hover use.ic-1{
+                    stroke: #62D1BA;
+                }
+                &:hover use.ic-2{
+                    stroke: #62D1BA;
+                }
+                &:active use.ic-2{
+                    stroke: rgba(68, 68, 68, .3);
+                }
+                &:active use.ic-1{
+                    stroke: rgba(68, 68, 68, .3);
+                }
+                svg path {
+                    fill: inherit;
+                }
             }
             &-list{
                 margin: 0;
@@ -92,6 +118,12 @@
                 &::placeholder{
                     color: rgba(0, 0, 0, .3);
                 }
+                &:hover{
+                    border-bottom: 1px solid #62D1BA;
+                }
+                &:active{
+                    color: #000;
+                }
             }
             &-container{
                 display: flex;
@@ -106,6 +138,9 @@
                 margin: 0;
                 border-bottom: 1px solid #000;
                 padding-bottom: 11px;
+                &:hover{
+                    border-bottom: 3px solid #62D1BA;
+                }
             }
             &-information{
                 border: none;
@@ -133,6 +168,9 @@
                 margin: 0;
                 border-bottom: 1px solid #000;
                 padding-bottom: 11px;
+                &:hover{
+                    border-bottom: 3px solid #62D1BA;
+                }
             }
             &-information{
                 border: none;
@@ -169,6 +207,13 @@
                 border: 2px solid #444444;
                 &::placeholder{
                     color: rgba(0, 0, 0, .3);
+                }
+                &:hover{
+                    border: 2px solid #62D1BA;
+                }
+                &:focus{
+                    outline: none !important;
+                    border: 2px solid #62D1BA;
                 }
             }
             &-note{
@@ -312,6 +357,9 @@
                     &.name{
                         margin-left: 74px;
                     }
+                    &:hover{
+                        border-bottom: 3px solid #62D1BA;
+                    }
                 }
                 &-list{
                     grid-column: 2/5;
@@ -336,6 +384,9 @@
                     margin-bottom: 0;
                     padding-bottom: 0;
                     width: 285px;
+                    &:hover{
+                        border-bottom: none;
+                    }
                 }
             }
             &-phone{

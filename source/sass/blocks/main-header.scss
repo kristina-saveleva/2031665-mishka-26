@@ -3,13 +3,18 @@
     &__logo{
         &-main{
             width: 85.97px;
+            height: 34.92px;
             padding-right: 66px;
         }
         &-background{
             display: none;
+            width: 114px;
+            height: 46px;
         }
         &-desktop{
             display: none;
+            width: 149px;
+            height: 72px;
         }
     }
     &__title{
@@ -41,7 +46,7 @@
         }
     }
     &__inner{
-        margin-top: 90px;
+        margin-top: 85px;
     }
     &__content{
         display: flex;
@@ -138,20 +143,29 @@
             }
         }
         &__inner{
-            margin-top: 341px;
+            margin-top: 336px;
             display: flex;
         }
         &__content{
+            margin-top: 5px;
             &-title{
-                padding: 25px 22px 40px 37px;
+                padding: 25px 35px 40px 37px;
                 line-height: 31px;
             }
             &-image{
-                margin-right: 40px;
+                width: 60px;
+                height: 60px;
+                margin-right: 34px;
+                margin-top: 30px;
                 &.interior-image{
                     margin-right: 40px;
                     margin-left: -22px;
+                    width: 40px;
+                    height: 62px;
                 }
+            }
+            &:hover{
+                margin-top: 0;
             }
         }
         &__subtitle{
