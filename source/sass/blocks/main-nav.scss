@@ -8,6 +8,11 @@
             display: block;
         }
     }
+    &--nojs{
+        &:focus-within .main-nav__wrapper{
+            display: block;
+        }
+    }
     &--closed{
         & .main-nav__wrapper{
             display: block;
@@ -36,6 +41,14 @@
         padding: 0;
         cursor: pointer;
         margin: 6px -3px 0 0;
+        &-js{
+        &:focus .button-closed{
+            display: block;
+        }
+        &:focus .button-opened{
+            display: none;
+        }
+        }
     }
     &__list{
         padding: 0;

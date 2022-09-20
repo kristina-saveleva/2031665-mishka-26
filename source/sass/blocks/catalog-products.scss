@@ -71,7 +71,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
-            margin: 0 24px 50px 18px;
+            margin: 0 24px 53px 18px;
             &-list{
                 margin-top: 51px;
             }
@@ -144,7 +144,7 @@
         &__wrapper{
             grid-column: 1;
             grid-row: 2;
-            padding: 31px 50px 32px 29px;
+            padding: 20px 50px 32px 29px;
         }
         &__price{
             &-container{
