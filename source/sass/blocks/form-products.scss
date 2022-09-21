@@ -73,19 +73,19 @@
                 & .path{
                     fill: #000;
                 }
-                &:hover use.ic-1{
-                    stroke: #62D1BA;
-                }
-                &:hover use.ic-2{
-                    stroke: #62D1BA;
-                }
                 &:active use.ic-2{
                     stroke: rgba(68, 68, 68, .3);
                 }
                 &:active use.ic-1{
                     stroke: rgba(68, 68, 68, .3);
                 }
-                svg path {
+                &:hover use.ic-2{
+                    fill: #62D1BA;
+                }
+                &:hover use.ic-1{
+                    fill: #62D1BA;
+                }
+                svg {
                     fill: inherit;
                 }
             }
