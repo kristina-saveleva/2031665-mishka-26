@@ -10,6 +10,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import cheerio from 'gulp-cheerio';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -71,14 +72,27 @@ webp: {}
 
 // SVG
 
+const svgoConfig = {
+  multipass: true,
+  plugins: [
+    'preset-default',
+  ]
+}
+
 const svg = () =>
 gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-.pipe(svgo())
+.pipe(svgo(svgoConfig))
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
-.pipe(svgo())
+.pipe(cheerio({
+  run: ($) => {
+      $('[fill="none"]').removeAttr('fill');
+  },
+  parserOptions: { xmlMode: true }
+}))
+.pipe(svgo(svgoConfig))
 .pipe(svgstore({
 inlineSvg: true
 }))

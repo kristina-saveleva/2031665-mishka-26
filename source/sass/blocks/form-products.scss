@@ -70,8 +70,17 @@
                 margin-bottom: 23px;
                 fill: #fff;
                 stroke: #000;
-                & .path{
-                    fill: #000;
+                & use.ic-1{
+                    stroke-width: 1.5;
+                }
+                & use.ic-2{
+                    stroke-width: 1.5;
+                }
+                &:hover use.ic-1{
+                    stroke: #62D1BA;
+                }
+                &:hover use.ic-2{
+                    stroke: #62D1BA;
                 }
                 &:active use.ic-2{
                     stroke: rgba(68, 68, 68, .3);
@@ -79,13 +88,7 @@
                 &:active use.ic-1{
                     stroke: rgba(68, 68, 68, .3);
                 }
-                &:hover use.ic-2{
-                    fill: #62D1BA;
-                }
-                &:hover use.ic-1{
-                    fill: #62D1BA;
-                }
-                svg {
+                svg path {
                     fill: inherit;
                 }
             }

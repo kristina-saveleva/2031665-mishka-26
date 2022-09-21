@@ -1,6 +1,6 @@
 .main-nav{
     padding-right: 18px;
-    &--opened {
+    &--opened{
         & .main-nav__wrapper{
             display: none;
         }
@@ -72,12 +72,12 @@
             a:focus{
                 display: block;
             }
+            & svg{
+                opacity: 0.2;
+            }
             &:hover svg{
                 fill: #63D1BB;
                 opacity: 1;
-            }
-            &:active svg{
-                opacity: .3;
             }
             &-delivery{
                 display: none;
